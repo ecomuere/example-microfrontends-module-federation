@@ -11,7 +11,7 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./ProductIndex": "./src/index.js",
+        "./ProductIndex": "./src/bootstrap.js",
       },
       shared: ["faker"], // will load only one faker is different microfrontends are using the same version. Many version if different versions are defined in each microfrontend
       // shared: {
