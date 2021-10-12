@@ -4,4 +4,4 @@ This is just an example on how to use Webpack Module Federation with Vanilla JS 
 
 ## Disclaimer
 
-Microfrontends sould not be placed into the same repository. This is just a demo example.
+Microfrontends should not be placed into the same repository. This is just a demo example.
