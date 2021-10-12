@@ -13,7 +13,12 @@ module.exports = {
       exposes: {
         "./ProductIndex": "./src/index.js",
       },
-      shared: ["faker"],
+      shared: ["faker"], // will load only one faker is different microfrontends are using the same version. Many version if different versions are defined in each microfrontend
+      // shared: {
+      //   faker: {
+      //     singleton: true, // this will load only one version of faker no matter what
+      //   },
+      // },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
